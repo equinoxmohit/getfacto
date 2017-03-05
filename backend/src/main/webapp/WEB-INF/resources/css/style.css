@@ -958,7 +958,7 @@ div#my-cart-modal .close:hover, .close:focus {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 50%;
 }
 
 figure.effect-apollo {
@@ -1606,8 +1606,8 @@ div#small-dialog4 {
 	padding: 15px 0;
 	border: none;
 	outline: none;
-	color: #FFF;
-	background-color: #31708f;
+	color: #C41228;
+	background-color: #171A43;
 	font-weight: 700;
 	margin-left: 5px;
 }
@@ -1650,8 +1650,8 @@ div#small-dialog4 {
 h1.w3wthreeheadingaits {
 	font-size: 40px;
 	padding: 50px 0;
-	background-color: #028fcc;
-	color: #FFF;
+	background-color: #171A43;
+	color: #F4F4F4;
 }
 
 .wthreeproductdisplay {

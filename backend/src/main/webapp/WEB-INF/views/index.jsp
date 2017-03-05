@@ -2,19 +2,11 @@
 
 
 <!-- Header-Slider -->
-<div class="w3slideraits">
-    <div class="fluid_dg_wrap fluid_dg_emboss pattern_1 fluid_dg_white_skin" id="fluid_dg_wrap_4">
-        <div data-thumb="https://dummyimage.com/1700x1000/3b393b/fff" data-src="https://dummyimage.com/1700x1000/3b393b/fff"></div>
-        <div data-thumb="https://dummyimage.com/1700x1000/3b393b/fff" data-src="https://dummyimage.com/1700x1000/3b393b/fff"></div>
-        <div data-thumb="https://dummyimage.com/1700x1000/3b393b/fff" data-src="https://dummyimage.com/1700x1000/3b393b/fff"></div>
-        <div data-thumb="https://dummyimage.com/1700x1000/3b393b/fff" data-src="https://dummyimage.com/1700x1000/3b393b/fff"></div>
-        <div data-thumb="https://dummyimage.com/1700x1000/3b393b/fff" data-src="https://dummyimage.com/1700x1000/3b393b/fff"></div>
-    </div>
-</div>
-<!-- //Header-Slider -->
-</div>
-<!-- //Header -->
 
+
+<div class="agileheader-banner">
+    <img src="<c:url value="/resources/images/iphone-banner.jpg"/>" alt="Groovy Apparel">
+</div>
 
 <!-- Latest-Arrivals -->
 <div class="wthreehome-latest">
@@ -25,7 +17,7 @@
             <div class="col-md-6 wthreehome-latest-grid wthreehome-latest-grid1">
                 <div class="grid">
                     <figure class="effect-apollo">
-                        <img src="https://dummyimage.com/1700x1000/3b393b/fff" alt="${product.productName}">
+                        <img class="img-responsive" src="<c:url value="/resources/images/${product.id}.png"/>" alt="${product.productName}">
                         <figcaption></figcaption>
                     </figure>
                 </div>

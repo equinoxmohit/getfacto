@@ -9,7 +9,7 @@
                         <div class="flexslider">
                             <ul class="slides">
                                 <li data-thumb="images/s1.jpg">
-                                    <div class="thumb-image detail_images"> <img src="https://dummyimage.com/1700x1000/3b393b/fff" data-imagezoom="true" class="img-responsive" alt="Get Facto"></div>
+                                    <div class="thumb-image detail_images"> <img src="<c:url value="/resources/images/${product.id}.png"/>" data-imagezoom="true" class="img-responsive" alt="Get Facto"></div>
                                 </li>
                             </ul>
                         </div>

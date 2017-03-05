@@ -1,6 +1,6 @@
 <%@include file="/WEB-INF/views/shared/header.jsp" %>
 <div class="agileheader-banner w3mensaits">
-    <img src="https://dummyimage.com/1700x1000/3b393b/fff" alt="Groovy Apparel">
+    <img src="<c:url value="/resources/images/iphone-banner.jpg"/>" alt="Groovy Apparel">
 </div>
 
 <!-- Heading -->
@@ -17,8 +17,8 @@
                     <a href="<c:url value="/product/${product.id}"/>">
                         <div class="cbp-pgitem a3ls">
                             <div class="cbp-pgitem-flip">
-                                <img src="" alt="Get Facto">
-                                <img src="" alt="Get Facto">
+                                <img src="<c:url value="/resources/images/${product.id}.png"/>" alt="Get Facto">
+                                <img src="<c:url value="/resources/images/${product.id}.png"/>" alt="Get Facto">
                             </div>
                         </div>
                     </a>

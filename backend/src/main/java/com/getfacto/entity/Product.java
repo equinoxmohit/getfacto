@@ -1,8 +1,10 @@
 package com.getfacto.entity;
 
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 import java.util.Date;
 
 /**
@@ -15,30 +17,34 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column(nullable = false)
+    @NotEmpty(message = "The product name can not be empty")
     private String productName;
 
-    @Column(nullable = false)
+    @NotEmpty(message = "The manufacturer name can not be empty")
     private String manufacturerName;
 
-    @Column(nullable = false)
+    @NotEmpty(message = "The product description  can not be empty")
     private String productDescription;
 
-
-    @Column(nullable = false)
+    @Min(value =0, message = "The price can not be less than zero")
     private double productPrice;
 
-    @Column(nullable = false)
-    private int numberInStock;
+   @Min(value = 0 ,message = "The number in stock can not be less than zero")
+   private int numberInStock;
 
-    @Column(nullable = false)
+
+    @NotEmpty(message = "The product category can not be empty")
     private String productCategory;
 
+    @Min(value = 0, message = "The shipping time can not be less than zero")
     private int discountRate;
 
+    @Min(value = 0, message = "The shipping time can not be less than zero")
     private int productRating;
 
+
     private String productSize;
+
 
     private String discountEndDate;
 
@@ -46,6 +52,7 @@ public class Product {
 
     private boolean trendingStatus;
 
+    @Min(value = 0, message = "The shipping time can not be less than zero")
     private int shippingTime;
 
     @Transient

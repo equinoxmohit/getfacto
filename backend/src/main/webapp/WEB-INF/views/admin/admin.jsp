@@ -30,7 +30,7 @@
         <c:forEach var="product" items="${products}">
         <tbody>
         <tr>
-            <td><img src="#" alt="image"></td>
+            <td><img src="<c:url value="/resources/images/${product.id}.png"/>" class="img-responsive img-circle" alt="image"></td>
             <td>${product.productName}</td>
             <td>${product.productDescription}</td>
             <td>${product.manufacturerName}</td>
@@ -44,8 +44,8 @@
             <td>${product.trendingStatus}</td>
             <td>${product.shippingTime}</td>
             <td>${product.productCategory}</td>
-            <td><a href=""> <span class="glyphicon glyphicon-pencil"></span></a></td>
-            <td><a href="<c:url value="/admin/deleteproduct/${product.id}"/> "> <span class="glyphicon glyphicon-remove-circle"></span></a></td>
+            <td><a href="<c:url value="/admin/updateproduct/${product.id}"/>"> <span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href="<c:url value="/admin/deleteproduct/${product.id}"/>"> <span class="glyphicon glyphicon-remove-circle"></span></a></td>
         </tr>
         </tbody>
         </c:forEach>
