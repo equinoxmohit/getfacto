@@ -11,6 +11,8 @@
 <!-- Latest-Arrivals -->
 <div class="wthreehome-latest">
     <div class="container">
+        <h1>Trending Products</h1>
+        <hr>
         <c:forEach var="product" items="${products}">
          <c:if test="${product.trendingStatus}">
         <div class="wthreehome-latest-grids">
@@ -21,7 +23,8 @@
                         <figcaption></figcaption>
                     </figure>
                 </div>
-                <h4>${product.productName}</h4>
+                <h3>${product.productName}</h3>
+                <h4>${product.manufacturerName}</h4>
                 <h5>Rs.${product.productPrice-(product.discountRate/100*product.productPrice)}</h5>
                 <h6><a class="btn btn-default" style="text-decoration: none" href="<c:url value="/product/${product.id}"/>">View Product</a></h6>
             </div>

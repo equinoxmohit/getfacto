@@ -1,6 +1,14 @@
 <%@include file="/WEB-INF/views/admin/header-footer/header.jsp" %>
 
 <div class="container-fluid">
+    <div class="pull-right">
+        <c:if test="${pageContext.request.userPrincipal.name!=null}">
+            <h2>
+                Welcome:${pageContext.request.userPrincipal.name}
+                <a href="<c:url value="/j_spring_security_logout"/>">Logout</a>
+            </h2>
+        </c:if>
+    </div>
     <div class="pull-left">
         <a class="btn btn-default" href="<c:url value="/admin/addproduct"/> "><span class="glyphicon glyphicon-plus">Products</span></a>
     </div>

@@ -24,6 +24,7 @@ public class Product {
     private String manufacturerName;
 
     @NotEmpty(message = "The product description  can not be empty")
+    @Column(columnDefinition = "TEXT")
     private String productDescription;
 
     @Min(value =0, message = "The price can not be less than zero")

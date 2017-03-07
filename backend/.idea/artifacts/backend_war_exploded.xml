@@ -65,6 +65,10 @@
           <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty:6.1.22" />
           <element id="library" level="project" name="Maven: org.mortbay.jetty:servlet-api:2.5-20081211" />
           <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.6" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.1.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.1.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.1.4.RELEASE" />
         </element>
       </element>
     </root>
